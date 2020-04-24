@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+p {
+  font-family: montserrat;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+  height: 6vh;
+  width: 22vw;
+  background-image: url(logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logocon {
+  padding-top: 1.3vw;
+  height: 10vh;
+  width: 18vw;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5vw;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.fillform {
+  cursor: pointer;
+  height: 3.5vw;
+  width: 12vw;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  display: flex;
+  justify-content: center;
+  padding-top: 1vw;
+  color: #ffed00;
+  font-size: 0.7em;
+  position: relative;
+  margin-left: 4vw;
+  transition: 0.5s;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.fillform a {
+  text-decoration: none;
+}
+
+.fillform:hover {
+  background: rgb(80, 80, 80);
+  color: #ffed00;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.fillform:visited {
+  text-decoration: none;
+}
+
+.section1 {
+  height: 45vh;
+  width: 100%;
+}
+
+.ikoner {
+  height: 30vh;
+  width: 80vw;
+  background-image: url(ikoner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 4.5vw;
+  margin-top: 1vw;
+}
+
+.ikoncon {
+  display: flex;
+  justify-content: center;
+}
+
+#text2 {
+  max-width: 35vw;
+  font-size: 1.5em;
+  position: relative;
+  top: -6vw;
+}
+
+.text2con {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome {
+  text-align: center;
+  /* background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+    color: #555; */
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  padding-top: 30vh;
+  overflow: hidden;
+}
+
+.welcome div {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.welcome div:first-of-type {
+  animation: showup 7s forwards;
+}
+
+.show {
+  animation: showup2 7s forwards;
+}
+
+.show2 {
+  animation: showup 7s forwards;
+}
+
+.welcome div:last-of-type {
+  width: 0px;
+  animation: reveal 7s forwards;
+}
+
+.welcome div:last-of-type span {
+  margin-left: -355px;
+  animation: slidein 7s forwards;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dissapear {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showup2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: -5px;
+  }
+  100% {
+    margin-left: -5px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 810px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 810px;
+  }
+}
+
+.show {
+  animation: showup2 7s forwards;
+}
+
+.dissapear {
+  animation: dissapear 1s forwards;
+}
+
+@keyframes showup2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
