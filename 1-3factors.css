@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: paragraph;
+  src: url(/dxc-font/GT-Walsheim-Pro-Regular.woff2);
+}
+
+p {
+  font-family: paragraph;
+}
+
+/** side 1 / crucial **/
+
+#crucial {
+  height: 100vh;
+}
+
+#crucial .sectionwrapper {
+  display: flex;
+  margin: 200px 0 0 30px;
+}
+
+#crucial .right img {
+  display: none;
+}
+
+#crucial .arrow {
+  display: flex;
+  justify-content: center;
+}
+
+#crucial .arrow img {
+  height: 70px;
+}
+
+/** side 2  / intro **/
+
+#intro .arrow {
+  display: flex;
+  justify-content: center;
+}
+
+#intro .arrow img {
+  height: 70px;
+}
+
+#intro h2 {
+  margin-left: 15px;
+}
+
+#intro .sectionwrapper {
+  margin: 0 0 0 15px;
+}
+
+/** side 3 / success factors **/
+
+#success_factors {
+  height: 100vh;
+}
+
+#success_factors .left {
+  display: flex;
+  justify-content: center;
+}
+
+#success_factors .right {
+  margin: 30px 0 0 20px;
+}
+
+#success_factors .arrow {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+#success_factors .arrow img {
+  height: 70px;
+}
+
+#success_factors,
+#intro,
+#crucial {
+  scroll-snap-align: start end;
+}
+
+@media only screen and (min-width: 768px) {
+  /** side 1 **/
+
+  #crucial {
+    height: 100vh;
+  }
+
+  #crucial h1 {
+    font-size: 2rem;
+    font-family: paragraph;
+  }
+
+  #crucial .sectionwrapper {
+    display: flex;
+    margin: 0px 100px 0px 100px;
+  }
+
+  #crucial .left {
+    width: 500px;
+    padding: 200px 0;
+  }
+
+  #crucial .right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  #crucial .right img {
+    width: 700px;
+    display: block;
+  }
+
+  #crucial .arrow {
+    width: 100px;
+    margin-left: 150px;
+  }
+
+  #crucial .arrow img {
+    height: 70px;
+  }
+
+  /** side 2**/
+
+  #intro {
+    height: 100vh;
+  }
+
+  #intro h2 {
+    padding-top: 100px;
+    width: 650px;
+    margin: 0 0 0 100px;
+    font-family: paragraph;
+  }
+
+  #intro .sectionwrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 30px 100px 0px 100px;
+    justify-content: space-between;
+  }
+
+  #intro .left {
+    width: 500px;
+  }
+
+  #intro .right {
+    width: 500px;
+  }
+
+  #intro .arrow {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #intro .arrow img {
+    height: 70px;
+  }
+
+  /** side 3 **/
+
+  #success_factors {
+    height: 100vh;
+  }
+
+  #success_factors h2,
+  p {
+    font-family: paragraph;
+  }
+
+  #success_factors .sectionwrapper {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px 150px 0px 150px;
+    justify-content: space-around;
+  }
+
+  /* #success_factors .left {
+        width: 400px;
+        height: 400px;
+      }
+      
+      #success_factors .left img {
+        width: 100%;
+      } */
+
+  #success_factors .right {
+    margin-top: 100px;
+    width: 500px;
+  }
+
+  #success_factors .arrow {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #success_factors .arrow img {
+    height: 70px;
+  }
+}
