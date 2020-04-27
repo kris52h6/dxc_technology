@@ -1,6 +1,41 @@
 "use strict";
 
+const endpoint = "https://dxctech-ce42.restdb.io/rest/subscribers";
+const apiKey = "5ea2bc071851f96a8ea166b1";
+
 window.addEventListener("DOMContentLoaded", start);
+
+window.addEventListener("load", (e) => {
+  document.querySelector("button.submit").addEventListener("click", () => {
+    const data = {
+      id: e._id,
+      firstname: firstname.value,
+      lastname: lastname.value,
+      work_email: work_email.value,
+      company: company.value,
+      job_title: job_title.value,
+      country: country.value,
+    };
+    post(data);
+  });
+});
+
+function post(data) {
+  //   showSubmit(data);
+  const postData = JSON.stringify(data);
+  fetch(endpoint, {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json; charset=utf-8",
+      "x-apikey": apiKey,
+      "cache-control": "no-cache",
+    },
+    body: postData,
+  })
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+}
+
 let time;
 function start() {
   document.querySelector("body > section > div.welcome > div:nth-child(2) > span").addEventListener("animationend", secondText);
