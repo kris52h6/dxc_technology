@@ -68,7 +68,7 @@ nav {
 }
 
 .buisness_benefits {
-  width: 1000px;
+  width: 800px;
 
   padding: 50px 0 50px 100px;
 
@@ -84,13 +84,6 @@ nav {
   display: flex;
   justify-content: center;
 }
-
-/* .indhold {
-  display: flex;
-
-  width: 1400;
-  height: 600;
-} */
 
 .headText {
   padding-top: 15px;
@@ -128,4 +121,7 @@ nav {
   width: 5vw;
 
   margin: 0 0 0 47vw;
+}
+
+@media screen and (min-width: 1080px) {
 }
