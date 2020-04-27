@@ -38,6 +38,65 @@ nav {
   visibility: hidden;
 }
 
+.none {
+  display: none;
+}
+
+/* FORM STYLING */
+
+#subscribe_form {
+  display: grid;
+  justify-content: center;
+}
+
+form {
+  width: 45vw;
+  margin: 10px auto;
+  background-color: #ecf0f1;
+  padding: 50px;
+  border-radius: 5px;
+  font-family: montserrat;
+}
+
+input[type="text"],
+input[type="email"] {
+  background-color: white;
+  font-family: montserrat;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0.2rem;
+  border: none;
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 0.875em;
+  margin: 0 0 1em 0;
+  padding: 0.5em;
+  height: 2rem;
+  width: 100%;
+}
+
+.submit {
+  border-style: none;
+  border-width: 0;
+  cursor: pointer;
+  font-family: montserrat;
+  font-weight: bold;
+  line-height: 1;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0.8rem 1rem;
+  font-size: 1em;
+  background-color: #bdc3c7;
+  border-color: #34495e;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 5px;
+  width: 10vw;
+}
+
 .fillform {
   cursor: pointer;
   height: 3.5vw;
@@ -106,7 +165,7 @@ nav {
   justify-content: center;
 }
 
-.welcome {
+#welcome {
   text-align: center;
   /* background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
     color: #555; */
@@ -116,13 +175,13 @@ nav {
   overflow: hidden;
 }
 
-.welcome div {
+#welcome div {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
 }
 
-.welcome div:first-of-type {
+#welcome div:first-of-type {
   animation: showup 7s forwards;
 }
 
@@ -134,12 +193,12 @@ nav {
   animation: showup 7s forwards;
 }
 
-.welcome div:last-of-type {
+#welcome div:last-of-type {
   width: 0px;
   animation: reveal 7s forwards;
 }
 
-.welcome div:last-of-type span {
+#welcome div:last-of-type span {
   margin-left: -355px;
   animation: slidein 7s forwards;
 }

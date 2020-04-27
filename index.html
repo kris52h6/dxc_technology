@@ -15,7 +15,7 @@
       <a href="4-6_factors.html"><button>test</button></a>
     </nav>
     <section class="section1">
-      <div class="welcome">
+      <div id="welcome">
         <div><b>6 factors</b></div>
         <div>
           <span>crucial to the success of industrial IoT in manufacturing</span>
@@ -32,6 +32,34 @@
           </div>
         </div>
       </div>
+
+      <div id="form_wrap" class="none">
+        <section id="subscribe_form">
+          <form action="test.html" method="POST">
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname" placeholder="First name" />
+
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname" placeholder="Last name" />
+
+            <label for="work_email">Work e-mail address</label>
+            <input type="email" id="work_email" placeholder="work@yourworkemail.com" />
+
+            <div class="job_wrapper">
+              <label for="company">Company</label>
+              <input type="text" id="company" placeholder="Company" />
+
+              <label for="job_title">Job title</label>
+              <input type="text" id="job_title" placeholder="Your job title" />
+            </div>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" placeholder="Country" />
+          </form>
+          <button class="submit">Submit</button>
+        </section>
+      </div>
+
       <div class="ikoncon">
         <div class="ikoner"></div>
       </div>
