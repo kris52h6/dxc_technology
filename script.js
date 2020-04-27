@@ -6,7 +6,7 @@ const apiKey = "5ea2bc071851f96a8ea166b1";
 window.addEventListener("DOMContentLoaded", start);
 
 window.addEventListener("load", (e) => {
-  document.querySelector("button.submit").addEventListener("click", () => {
+  document.querySelector("body > section > section > button").addEventListener("click", () => {
     const data = {
       id: e._id,
       firstname: firstname.value,
@@ -38,7 +38,7 @@ function post(data) {
 
 let time;
 function start() {
-  document.querySelector("body > section > div.welcome > div:nth-child(2) > span").addEventListener("animationend", secondText);
+  document.querySelector("body > section > div#welcome > div:nth-child(2) > span").addEventListener("animationend", secondText);
   document.querySelector("#knap1").addEventListener("click", formFunction);
   //   time = setTimeout(secondText, 100);
 }
@@ -64,4 +64,15 @@ function formFunction() {
   document.querySelector("#text2").classList.add("dissapear");
 
   //   document.querySelector("#text2").classList.add("hidden");
+
+  document.querySelector("#knap1").addEventListener("animationend", showForm);
+}
+
+function showForm() {
+  document.querySelector("#welcome").classList.add("none");
+  document.querySelector("#text2").classList.add("none");
+  document.querySelector("#knap1").classList.add("none");
+
+  document.querySelector("#form_wrap").classList.remove("none");
+  document.querySelector("#form_wrap").classList.add("show");
 }
