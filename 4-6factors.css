@@ -29,7 +29,7 @@ nav {
 }
 
 .scrollContainer {
-  height: calc(100vh - 2em);
+  height: calc(100vh - 10vh);
   perspective: 2px;
   overflow: scroll;
   overflow-x: hidden;
