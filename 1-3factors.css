@@ -13,7 +13,6 @@ p {
 }
 
 /** side 1 / crucial **/
-
 #crucial {
   height: 100vh;
 }
@@ -27,7 +26,12 @@ p {
   display: none;
 }
 
+#crucial .left {
+  margin-top: 200px;
+}
+
 #crucial .arrow {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -49,10 +53,24 @@ p {
 
 #intro h2 {
   margin-left: 15px;
+  padding-top: 50px;
 }
 
 #intro .sectionwrapper {
   margin: 0 0 0 15px;
+}
+
+#intro p {
+  margin-top: 15px;
+  line-height: 20px;
+}
+
+#intro .left {
+  margin-top: 50px;
+}
+
+#intro .right {
+  margin-top: 50px;
 }
 
 /** side 3 / success factors **/
@@ -78,6 +96,15 @@ p {
 
 #success_factors .arrow img {
   height: 70px;
+}
+
+#success_factors .left {
+  height: 300px;
+  width: 300px;
+}
+
+#success_factors .left img {
+  margin: 50px 100px 0 200px;
 }
 
 #success_factors,
