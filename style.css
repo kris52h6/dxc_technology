@@ -168,11 +168,10 @@ input[type="email"] {
 
 .ikoner {
   height: 30vh;
-  width: 80vw;
+  width: 60vw;
   background-image: url(ikoner.png);
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: 4.5vw;
   margin-top: 1vw;
 }
 
