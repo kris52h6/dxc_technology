@@ -109,8 +109,34 @@ p {
 
 #success_factors,
 #intro,
-#crucial {
+#crucial,
+#author {
   scroll-snap-align: start end;
+}
+
+/** author **/
+
+#author {
+  height: 100vh;
+}
+
+#author .sectionwrapper {
+  margin: 0 20px 0 20px;
+}
+
+#author img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#author .right h2 {
+  padding-top: 10px;
+}
+
+#author .right p {
+  padding-top: 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -234,5 +260,29 @@ p {
 
   #success_factors .arrow img {
     height: 70px;
+  }
+
+  #author .sectionwrapper {
+    margin: 0 100px 0 100px;
+    padding-top: 50px;
+  }
+
+  #author .author_img {
+    width: 300px;
+    height: 300px;
+  }
+
+  #author .left {
+    margin-bottom: 50px;
+  }
+
+  #author .right {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 800px;
+  }
+
+  #author .right p {
+    margin-left: 50px;
   }
 }

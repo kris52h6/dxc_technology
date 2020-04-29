@@ -133,6 +133,32 @@ input[type="email"] {
   text-decoration: none;
 }
 
+/* Popup */
+
+#form-popup {
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  top: 57vh;
+  left: 55vw;
+}
+
+#form-popup h2 {
+  max-width: 40vw;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+#form-popup {
+  transition: opacity 1s;
+}
+
+#form-popup.opacity-toggle {
+  opacity: 0;
+}
+
 .section1 {
   height: 45vh;
   width: 100%;
