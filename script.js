@@ -40,6 +40,12 @@ function post(data) {
 
 let time;
 function start() {
+  document.querySelector("#subscribe_form > button").addEventListener("click", (e) => {
+    localStorage.setItem("name", "kristian");
+    window.location = "4-6_factors.html";
+    console.log("hep");
+  });
+
   document.querySelector("body > section > div#welcome > div:nth-child(2) > span").addEventListener("animationend", secondText);
   document.querySelector("#knap1").addEventListener("click", formFunction);
   first.forEach((link) => {
