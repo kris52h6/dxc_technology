@@ -100,7 +100,7 @@ input[type="email"] {
 
 .fillform {
   cursor: pointer;
-  height: 3.5vw;
+  height: 3vw;
   width: 12vw;
   background-color: black;
   font-family: "Roboto", sans-serif;
@@ -112,8 +112,8 @@ input[type="email"] {
   color: #ffed00;
   font-size: 0.7em;
   position: relative;
-  top: 11vh;
-  margin-left: 4vw;
+  top: 30vh;
+  margin-left: 1vw;
   transition: 0.5s;
   text-decoration: none;
   border-radius: 10px;
@@ -167,12 +167,12 @@ input[type="email"] {
 }
 
 .ikoner {
-  height: 30vh;
+  height: 190px;
   width: 60vw;
   background-image: url(ikoner.png);
   background-size: contain;
   background-repeat: no-repeat;
-  margin-top: 1vw;
+  margin: 5vw 0 0;
 }
 
 .ikoncon {
@@ -190,6 +190,13 @@ input[type="email"] {
 #text2 h2 {
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
+}
+
+#text2 .citat {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .text2con {
