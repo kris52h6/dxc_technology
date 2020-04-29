@@ -39,7 +39,7 @@ nav {
 
 .logo {
   height: 6vh;
-  width: 22vw;
+  width: 50vw;
   background-image: url(logo.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -48,7 +48,7 @@ nav {
 .logocon {
   padding-top: 1.3vw;
   height: 10vh;
-  width: 18vw;
+  width: 50vw;
   display: flex;
   justify-content: flex-start;
   padding-left: 5vw;
@@ -61,36 +61,29 @@ nav {
 }
 
 .section {
-  height: 100vh;
+  height: 150vh;
   width: 100%;
 
   scroll-snap-align: start end;
 }
 
 .buisness_benefits {
-  width: 1000px;
+  width: 450px;
 
-  padding: 50px 0 50px 100px;
+  padding: 50px 0 50px 30px;
 
   display: flex;
   justify-content: center;
 }
 
 .factors {
-  width: 1000px;
+  width: 450px;
 
-  padding: 50px 0 50px 300px;
+  padding: 50px 0 50px 30px;
 
   display: flex;
   justify-content: center;
 }
-
-/* .indhold {
-  display: flex;
-
-  width: 1400;
-  height: 600;
-} */
 
 .headText {
   padding-top: 15px;
@@ -105,22 +98,20 @@ nav {
 
 .six_things {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 3vw;
 
-  padding: 10px 20px 10px 80px;
+  padding: 10px 30px 10px 20px;
 }
 
 .textBox {
   display: flex;
   justify-content: space-evenly;
-
-  width: 40vw;
 }
 
 .icon {
-  width: 35vw;
-  height: 35vh;
+  width: 70vw;
+  /* height: 55vh; */
   margin-right: 10px;
 }
 
@@ -128,4 +119,72 @@ nav {
   width: 5vw;
 
   margin: 0 0 0 47vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    height: 6vh;
+    width: 22vw;
+    background-image: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .logocon {
+    padding-top: 1.3vw;
+    height: 10vh;
+    width: 18vw;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5vw;
+  }
+
+  .buisness_benefits {
+    width: 800px;
+
+    padding: 50px 0 50px 100px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .factors {
+    width: 1000px;
+
+    padding: 50px 0 50px 300px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .headText {
+    padding-top: 15px;
+  }
+
+  .six_things {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3vw;
+
+    padding: 10px 20px 10px 80px;
+  }
+
+  .textBox {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 40vw;
+  }
+
+  .icon {
+    width: 35vw;
+    height: 35vh;
+    margin-right: 10px;
+  }
+
+  .scrollIcon {
+    width: 5vw;
+
+    margin: 0 0 0 47vw;
+  }
 }
