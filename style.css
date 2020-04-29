@@ -45,6 +45,7 @@ nav {
 /* FORM STYLING */
 
 #subscribe_form {
+  margin-top: 4vw;
   display: grid;
   justify-content: center;
 }
@@ -111,6 +112,7 @@ input[type="email"] {
   color: #ffed00;
   font-size: 0.7em;
   position: relative;
+  top: 11vh;
   margin-left: 4vw;
   transition: 0.5s;
   text-decoration: none;
@@ -186,9 +188,19 @@ input[type="email"] {
   top: -6vw;
 }
 
+#text2 h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+}
+
 .text2con {
   display: flex;
   justify-content: center;
+  height: 30vh;
+}
+
+.text2con p {
+  margin-top: 1vw;
 }
 
 #welcome {
@@ -197,8 +209,12 @@ input[type="email"] {
     color: #555; */
   font-family: "Roboto", sans-serif;
   font-size: 32px;
-  padding-top: 30vh;
+  padding-top: 20vh;
   overflow: hidden;
+}
+
+#welcome > div:nth-child(1) > b {
+  color: #ddcf0a;
 }
 
 #welcome div {
@@ -277,10 +293,10 @@ input[type="email"] {
     margin-left: -800px;
   }
   35% {
-    margin-left: -5px;
+    margin-left: -40px;
   }
   100% {
-    margin-left: -5px;
+    margin-left: -40px;
   }
 }
 
@@ -294,14 +310,14 @@ input[type="email"] {
     width: 0px;
   }
   30% {
-    width: 810px;
+    width: 350px;
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    width: 810px;
+    width: 350px;
   }
 }
 
@@ -325,5 +341,97 @@ input[type="email"] {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* .welcome p {
+    max-width: 20vw;
+  }
+
+  #welcome > div:nth-child(2) > span {
+    max-width: 20vw;
+  } */
+
+  .text2con {
+    flex-direction: column;
+    align-items: center;
+    height: 70vw;
+  }
+
+  #text2 {
+    max-width: 90vw;
+    padding: 25px;
+    top: -36vw;
+    font-size: 1.2em;
+  }
+
+  #knap1 {
+    top: -32vw;
+    position: relative;
+  }
+
+  .ikoner {
+    height: 15vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .fillform {
+    height: 10vw;
+    width: 30vw;
+    padding-top: 2.5vw;
+  }
+
+  .submit {
+    width: 30vw;
+  }
+
+  form {
+    width: 90vw;
+    margin-top: 1vw;
+  }
+
+  #subscribe_form {
+    position: relative;
+    top: -45vw;
+  }
+
+  #form_wrap {
+    height: 20vw;
+  }
+
+  .logo {
+    height: 10vh;
+    width: 50vw;
+  }
+
+  .logocon {
+    padding-top: 2.3vw;
+    height: 10vh;
+    width: 50vw;
+  }
+
+  .text2con p {
+    margin-top: 4vw;
+  }
+
+  .fillform {
+    top: 0;
+  }
+
+  @keyframes slidein {
+    0% {
+      margin-left: -800px;
+    }
+    20% {
+      margin-left: -800px;
+    }
+    35% {
+      margin-left: -10px;
+    }
+    100% {
+      margin-left: -10px;
+    }
   }
 }

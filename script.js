@@ -86,6 +86,7 @@ function showForm() {
   document.querySelector("#welcome").classList.add("none");
   document.querySelector("#text2").classList.add("none");
   document.querySelector("#knap1").classList.add("none");
+  document.querySelector(".ikoner").classList.add("none");
 
   document.querySelector("#form_wrap").classList.remove("none");
   document.querySelector("#form_wrap").classList.add("show");
