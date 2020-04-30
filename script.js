@@ -63,6 +63,11 @@ function secondText() {
 
   document.querySelector("#text2").classList.add("show");
 
+  if (screen.width > 560) {
+    document.getElementById("welcome").style.paddingTop = "15vh";
+    document.getElementById("textcon").style.height = "33vh";
+  }
+
   time = setTimeout(secondText2, 1000);
 }
 
@@ -90,6 +95,12 @@ function showForm() {
 
   document.querySelector("#form_wrap").classList.remove("none");
   document.querySelector("#form_wrap").classList.add("show");
+
+  if (screen.width > 560) {
+    document.getElementById("textcon").style.height = "3vh";
+  } else {
+    document.getElementById("textcon").style.height = "33vh";
+  }
 }
 
 function showPopup() {
